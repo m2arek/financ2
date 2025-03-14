@@ -1,3 +1,5 @@
+/* style.css */
+
 /****************************************************
  * STYLES GÉNÉRAUX
  ****************************************************/
@@ -8,6 +10,7 @@ body {
   background: #f2f2f2;
   color: #333;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -17,7 +20,9 @@ body {
   border-radius: 5px;
 }
 
-/* ******** En-tête fixe avec titre et boutons ******** */
+/****************************************************
+ * EN-TÊTE FIXE AVEC TITRE ET BOUTONS
+ ****************************************************/
 .header {
   position: fixed;
   top: 0;
@@ -35,6 +40,8 @@ body {
   margin: 0;
   font-size: 24px;
 }
+
+/* Boutons du header */
 #topButtons {
   display: flex;
   align-items: center;
@@ -46,7 +53,9 @@ body {
   text-decoration: underline;
 }
 
-/* ******** Barre d'onglets fixe ******** */
+/****************************************************
+ * BARRE D'ONGLETS FIXE
+ ****************************************************/
 .tabNav {
   position: fixed;
   top: 70px; /* hauteur du header */
@@ -74,75 +83,37 @@ body {
   background-color: #0059b3;
 }
 .tabNav button.activeTab {
-  background-color: #ff4136; /* Fond rouge quand l'onglet est sélectionné */
+  background-color: #ff4136; /* Fond rouge quand sélectionné */
   color: #fff;
 }
 
-/* Titre de l'onglet sticky */
-.tabLogo {
-  position: sticky;
-  top: 120px; /* header (70px) + barre d'onglets (~50px) */
-  background: #fff;
-  z-index: 1000;
-}
-.tabLogo img {
-  max-height: 50px;
-  margin-right: 15px;
-}
-.tabLogo h2 {
-  margin: 0;
-  font-size: 18px;
-  color: #333;
-}
-
-/* Marge pour le formulaire pour éviter le chevauchement */
+/****************************************************
+ * ESPACES POUR LE CONTENU (pour éviter le chevauchement)
+ ****************************************************/
 #userForm {
-  margin-top: 170px;
+  margin-top: 170px; /* espace pour le header et la barre d'onglets */
 }
 
 /****************************************************
- * FORMULAIRES ET BLOCS
+ * CONTENU DES ONGLETS
  ****************************************************/
-form {
-  display: block;
-  margin-bottom: 20px;
+.tabContent {
+  display: none;
+  padding: 20px 0;
 }
+.tabContent.activeTab {
+  display: block;
+}
+
+/****************************************************
+ * SECTIONS ET FORMULAIRES
+ ****************************************************/
 .form-section {
   background-color: #fafafa;
   padding: 15px;
   border-radius: 5px;
   border: 1px solid #ddd;
   margin-bottom: 20px;
-}
-.form-section h3 {
-  background-color: #e0efff;
-  padding: 8px 12px;
-  border-radius: 4px;
-  color: #333;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-.form-section label {
-  font-weight: 500;
-  margin-top: 5px;
-  display: block;
-}
-.form-section input[type="text"],
-.form-section input[type="number"],
-.form-section input[type="time"],
-.form-section textarea,
-.form-section select {
-  width: 100%;
-  padding: 8px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  box-sizing: border-box;
-  margin-top: 5px;
-}
-.form-section input[disabled] {
-  background-color: #ececec;
-  color: #666;
 }
 
 /****************************************************
@@ -164,7 +135,7 @@ table thead {
 }
 
 /****************************************************
- * CARTE, BOUTONS
+ * CARTE ET DESSIN
  ****************************************************/
 #map-container {
   position: relative;
@@ -188,6 +159,10 @@ table thead {
   z-index: 1000;
   pointer-events: none;
 }
+
+/****************************************************
+ * BOUTONS GÉNÉRAUX
+ ****************************************************/
 button {
   display: inline-block;
   padding: 10px 15px;
@@ -217,18 +192,11 @@ button:hover {
 }
 
 /****************************************************
- * GRAPHIQUE
+ * GRAPHIQUES
  ****************************************************/
 #monthlyBarChart,
 #monthlyBarChartForced {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
-}
-
-/****************************************************
- * STYLES SPÉCIAUX POUR L'ONGLET 9
- ****************************************************/
-#tab9.tabContent {
-  background-color: #fff8ef;
 }
