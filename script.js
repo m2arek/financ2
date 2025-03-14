@@ -537,7 +537,11 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     tableBody.appendChild(totauxRow);
   }
-
+// Attacher l'événement click au bouton "Calculer le plan de trésorerie"
+const calculateTresorerieBtn = document.getElementById("calculateTresorerieBtn");
+if (calculateTresorerieBtn) {
+  calculateTresorerieBtn.addEventListener("click", calculatePlanTresorerie);
+}
   /***************************************************
    * SAUVEGARDER / CHARGER JSON
    ***************************************************/
