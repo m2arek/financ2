@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FRH PRO formulaire - v413</title>
+  <title>FRH PRO formulaire - v414</title>
   
-  <!-- Liens vers les fichiers CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Liens vers le fichier CSS local -->
+  <link rel="stylesheet" href="style.css">
   
   <!-- CSS externes -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"/>
@@ -50,7 +50,6 @@
         <!-- TAB 1 : Localisation & Données Irradiation -->
         <section id="tab1" class="tabContent">
           <div class="tabLogo">
-            
             <h2>Localisation & Données Irradiation</h2>
           </div>
           <label for="address">Adresse :</label>
@@ -91,7 +90,6 @@
         <!-- TAB 2 : Potentiel de production -->
         <section id="tab2" class="tabContent">
           <div class="tabLogo">
-           
             <h2>Potentiel de Production</h2>
           </div>
           <div class="form-section">
@@ -117,7 +115,7 @@
         <!-- TAB 3 : Production mensuel -->
         <section id="tab3" class="tabContent">
           <div class="tabLogo">
-            
+            <h2>Production mensuel</h2>
           </div>
           <div class="form-section">
             <h3>Production mensuel</h3>
@@ -138,7 +136,6 @@
         <!-- TAB 4 : Infos société -->
         <section id="tab4" class="tabContent">
           <div class="tabLogo">
-            
             <h2>Informations sur la société</h2>
           </div>
           <div class="form-section">
@@ -169,7 +166,6 @@
         <!-- TAB 5 : Infos toiture -->
         <section id="tab5" class="tabContent">
           <div class="tabLogo">
-           
             <h2>Informations sur la toiture</h2>
           </div>
           <div class="form-section">
@@ -223,7 +219,6 @@
         <!-- TAB 6 : Périodes d'utilisation -->
         <section id="tab6" class="tabContent">
           <div class="tabLogo">
-            
             <h2>Périodes d'utilisation</h2>
           </div>
           <div class="form-section">
@@ -265,7 +260,6 @@
         <!-- TAB 7 : Consommation mensuelle -->
         <section id="tab7" class="tabContent">
           <div class="tabLogo">
-           
             <h2>Consommation mensuelle</h2>
           </div>
           <div id="consumptionTableContainer" class="form-section">
@@ -294,7 +288,6 @@
         <!-- TAB 8 : Préconisation -->
         <section id="tab8" class="tabContent">
           <div class="tabLogo">
-            
             <h2>Préconisation</h2>
           </div>
           <div class="form-section">
@@ -358,7 +351,6 @@
         <!-- TAB 9 : Préconisation Sélection -->
         <section id="tab9" class="tabContent">
           <div class="tabLogo">
-            
             <h2>Préconisation Sélection</h2>
           </div>
           <div class="form-section">
@@ -414,7 +406,6 @@
         <!-- TAB 10 : Commentaires -->
         <section id="tab10" class="tabContent">
           <div class="tabLogo">
-            
             <h2>Commentaires</h2>
           </div>
           <div class="form-section">
@@ -429,12 +420,12 @@
             <label for="comments">Commentaires :</label>
             <textarea id="comments" name="comments" placeholder="Entrez vos commentaires"></textarea>
           </div>
+          <!-- Les éléments de capture, génération PDF, téléchargement et chargement de fichier sont dans le header -->
         </section>
 
         <!-- TAB 11 : Paramètres -->
         <section id="tab11" class="tabContent">
           <div class="tabLogo">
-            
             <h2>Paramètres</h2>
           </div>
           <div class="form-section">
@@ -475,7 +466,6 @@
         <!-- TAB 12 : Plan de trésorerie -->
         <section id="tab12" class="tabContent">
           <div class="tabLogo">
-            
             <h2>Plan de trésorerie</h2>
           </div>
           <div class="form-section">
@@ -525,6 +515,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
   
   <!-- Notre script personnalisé -->
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
