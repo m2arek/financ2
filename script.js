@@ -413,6 +413,7 @@ document.addEventListener("DOMContentLoaded", function () {
    * PLAN DE TRÉSORERIE (ONGLET 12)
    ***************************************************/
   function calculatePlanTresorerie() {
+    console.log("clic sur plan de trésorerie");
     const financementMode = document.getElementById("financementMode").value;
     const scenarioPlan = document.getElementById("scenarioPlan").value;
     
